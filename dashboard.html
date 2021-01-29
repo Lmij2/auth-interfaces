@@ -716,24 +716,31 @@ footer
                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">Vishweb Design</span>
                 <img class="img-profile rounded-circle" src="https://github.com/Lmij2/auth-interfaces/blob/main/img/logo3.PNG?raw=true">
               </a>
-		    
+		    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right py-0"
+                                    aria-labelledby="userDropdown">
+                                    <div class="list-group">
+                                        <a href="./loginForm.html" style="color: black"
+                                            class="list-group-item">
+                                            <div class="row no-gutters align-items-end">
 
-                                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right py-0" aria-labelledby="userDropdown">
-                                        <div class="list-group">
-                                            <a asp-controller="Authentification" asp-action="Login" style="color: black" class="list-group-item">
-                                                <div class="row no-gutters align-items-end">
-
-                                                    <div class="col-9 d-flex justify-content-end mr-2">
-                                                        Log Out
-                                                    </div>
-                                                    <div class="col-2">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-alert-circle text-danger"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
-                                                    </div>
+                                                <div class="col-9 d-flex justify-content-end mr-2">
+                                                    Log Out
                                                 </div>
-                                            </a>
+                                                <div class="col-2">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                        class="feather feather-alert-circle text-danger">
+                                                        <circle cx="12" cy="12" r="10"></circle>
+                                                        <line x1="12" y1="8" x2="12" y2="12"></line>
+                                                        <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </a>
 
-                                        </div>
                                     </div>
+                                </div>
             </li>
 
           </ul>
@@ -822,108 +829,202 @@ footer
                                             <th class="border-top-0">Action</th>
                                         </tr>
                                     </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <div class="d-flex align-items-center">
-                                                    <div class="m-r-10"><a class="btn btn-circle btn-info text-white">EA</a></div>
-                                                    <div class="">
-                                                        <h4 class="m-b-0 font-16">Elite Admin</h4>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <h4 class="mb-2 mt-2 font-16">Single use</h4>
-                                            </td>
-                                            <td>
-                                                <h4 class="mb-2 mt-2 font-16">John Doe</h4>
-                                            </td>
-                                            <td>
-                                                <h4 class="mb-2 mt-2 text-warning font-16">En Attente</h4>
-                                            </td>
-                                            <td><a href="./detailOrganisation.html"><button type="button" class="btn btn-primary">Consulter</button></a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="d-flex align-items-center">
-                                                    <div class="m-r-10"><a class="btn btn-circle btn-orange text-white">MA</a></div>
-                                                    <div class="">
-                                                        <h4 class="m-b-0 font-16">Monster Admin</h4>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <h4 class="mb-2 mt-2 font-16">Single use</h4>
-                                            </td>
-                                            <td>
-                                                <h4 class="mb-2 mt-2 font-16">John Doe</h4>
-                                            </td>
-                                            <td>
-                                                <h4 class="mb-2 mt-2 text-warning font-16">En Attente</h4>
-                                            </td>
-                                            <td><a href="./detailOrganisation.html"><button type="button" class="btn btn-primary">Consulter</button></a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="d-flex align-items-center">
-                                                    <div class="m-r-10"><a class="btn btn-circle btn-success text-white">MP</a></div>
-                                                    <div class="">
-                                                        <h4 class="m-b-0 font-16">Material Pro Admin</h4>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <h4 class="mb-2 mt-2 font-16">Single use</h4>
-                                            </td>
-                                            <td>
-                                                <h4 class="mb-2 mt-2 font-16">John Doe</h4>
-                                            </td>
-                                            <td>
-                                                <h4 class="mb-2 mt-2 text-warning font-16">En Attente</h4>
-                                            </td>
-                                            <td><a href="./detailOrganisation.html"><button type="button" class="btn btn-primary">Consulter</button></a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="d-flex align-items-center">
-                                                    <div class="m-r-10"><a class="btn btn-circle btn-purple text-white">AA</a></div>
-                                                    <div class="">
-                                                        <h4 class="m-b-0 font-16">Ample Admin</h4>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <h4 class="mb-2 mt-2 font-16">Single use</h4>
-                                            </td>
-                                            <td>
-                                                <h4 class="mb-2 mt-2 font-16">John Doe</h4>
-                                            </td>
-                                            <td>
-                                                <h4 class="mb-2 mt-2 text-warning font-16">En Attente</h4>
-                                            </td>
-                                            <td><a href="./detailOrganisation.html"><button type="button" class="btn btn-primary">Consulter</button></a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="d-flex align-items-center">
-                                                    <div class="m-r-10"><a class="btn btn-circle btn-orange text-white">TA</a></div>
-                                                    <div class="">
-                                                        <h4 class="m-b-0 font-16">Test Admin</h4>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <h4 class="mb-2 mt-2 font-16">Single use</h4>
-                                            </td>
-                                            <td>
-                                                <h4 class="mb-2 mt-2 font-16">John Doe</h4>
-                                            </td>
-                                            <td>
-                                                <h4 class="mb-2 mt-2 text-warning font-16">En Attente</h4>
-                                            </td>
-                                            <td><a href="./detailOrganisation.html"><button type="button" class="btn btn-primary">Consulter</button></a></td>
-                                        </tr>
-                                    </tbody>
+                                    
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="m-r-10"><a
+                                                    class="btn btn-circle btn-info text-white">EA</a>
+                                            </div>
+                                            <div class="">
+                                                <h4 class="m-b-0 font-16">Elite Admin</h4>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <h4 class="mb-2 mt-2 font-16">Single use</h4>
+                                    </td>
+                                    <td>
+                                        <h4 class="mb-2 mt-2 font-16">John Doe</h4>
+                                    </td>
+                                    <td>
+                                        <h4 class="mb-2 mt-2 text-warning font-16">En Attente</h4>
+                                    </td>
+                                    <td>
+                                        <a href="./detailOrganisation.html"><button type="button"
+                                            class="btn btn-primary">Consulter</button></td></a>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="m-r-10"><a
+                                                    class="btn btn-circle btn-orange text-white">MA</a>
+                                            </div>
+                                            <div class="">
+                                                <h4 class="m-b-0 font-16">Monster Admin</h4>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <h4 class="mb-2 mt-2 font-16">Single use</h4>
+                                    </td>
+                                    <td>
+                                        <h4 class="mb-2 mt-2 font-16">John Doe</h4>
+                                    </td>
+                                    <td>
+                                        <h4 class="mb-2 mt-2 text-warning font-16">En Attente</h4>
+                                    </td>
+                                    <td>
+                                        <a href="./detailOrganisation.html"><button type="button"
+                                            class="btn btn-primary">Consulter</button></td></a>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="m-r-10"><a
+                                                    class="btn btn-circle btn-success text-white">MP</a>
+                                            </div>
+                                            <div class="">
+                                                <h4 class="m-b-0 font-16">Material Pro Admin</h4>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <h4 class="mb-2 mt-2 font-16">Single use</h4>
+                                    </td>
+                                    <td>
+                                        <h4 class="mb-2 mt-2 font-16">John Doe</h4>
+                                    </td>
+                                    <td>
+                                        <h4 class="mb-2 mt-2 text-danger font-16">Refuse</h4>
+                                    </td>
+                                    <td>
+                                        <a href="./detailOrganisation.html"><button type="button"
+                                            class="btn btn-primary">Consulter</button></td></a>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="m-r-10"><a
+                                                    class="btn btn-circle btn-purple text-white">AA</a>
+                                            </div>
+                                            <div class="">
+                                                <h4 class="m-b-0 font-16">Ample Admin</h4>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <h4 class="mb-2 mt-2 font-16">Single use</h4>
+                                    </td>
+                                    <td>
+                                        <h4 class="mb-2 mt-2 font-16">John Doe</h4>
+                                    </td>
+                                    <td>
+                                        <h4 class="mb-2 mt-2 text-warning font-16">En Attente</h4>
+                                    </td>
+                                    <td>
+                                        <a href="./detailOrganisation.html"><button type="button"
+                                            class="btn btn-primary">Consulter</button></td></a>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="m-r-10"><a
+                                                    class="btn btn-circle btn-orange text-white">TA</a>
+                                            </div>
+                                            <div class="">
+                                                <h4 class="m-b-0 font-16">Test Admin</h4>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <h4 class="mb-2 mt-2 font-16">Single use</h4>
+                                    </td>
+                                    <td>
+                                        <h4 class="mb-2 mt-2 font-16">John Doe</h4>
+                                    </td>
+                                    <td>
+                                        <h4 class="mb-2 mt-2 text-success font-16">َAccepte</h4>
+                                    </td>
+                                    <td>
+                                        <a href="./detailOrganisation.html"><button type="button"
+                                            class="btn btn-primary">Consulter</button></td></a>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="m-r-10"><a
+                                                    class="btn btn-circle btn-success text-white">MP</a>
+                                            </div>
+                                            <div class="">
+                                                <h4 class="m-b-0 font-16">Material Pro Admin</h4>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <h4 class="mb-2 mt-2 font-16">Single use</h4>
+                                    </td>
+                                    <td>
+                                        <h4 class="mb-2 mt-2 font-16">John Doe</h4>
+                                    </td>
+                                    <td>
+                                        <h4 class="mb-2 mt-2 text-success font-16">َAccepte</h4>
+                                    </td>
+                                    <td>
+                                        <a href="./detailOrganisation.html"><button type="button"
+                                            class="btn btn-primary">Consulter</button></td></a>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="m-r-10"><a
+                                                    class="btn btn-circle btn-purple text-white">AA</a>
+                                            </div>
+                                            <div class="">
+                                                <h4 class="m-b-0 font-16">Ample Admin</h4>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <h4 class="mb-2 mt-2 font-16">Single use</h4>
+                                    </td>
+                                    <td>
+                                        <h4 class="mb-2 mt-2 font-16">John Doe</h4>
+                                    </td>
+                                    <td>
+                                        <h4 class="mb-2 mt-2 text-danger font-16">Refuse</h4>
+                                    </td>
+                                    <td>
+                                        <a href="./detailOrganisation.html"><button type="button"
+                                            class="btn btn-primary">Consulter</button></td></a>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="m-r-10"><a
+                                                    class="btn btn-circle btn-orange text-white">TA</a>
+                                            </div>
+                                            <div class="">
+                                                <h4 class="m-b-0 font-16">Test Admin</h4>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <h4 class="mb-2 mt-2 font-16">Single use</h4>
+                                    </td>
+                                    <td>
+                                        <h4 class="mb-2 mt-2 font-16">John Doe</h4>
+                                    </td>
+                                    <td>
+                                        <h4 class="mb-2 mt-2 text-success font-16">َAccepte</h4>
+                                    </td>
+                                    <td>
+                                        <a href="./detailOrganisation.html"><button type="button"
+                                            class="btn btn-primary">Consulter</button></td></a>
+                                </tr>
+                            </tbody>
                                 </table>
                             </div>
                         </div>
